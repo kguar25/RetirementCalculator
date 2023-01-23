@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="29793" started-at="2023-01-23T03:27:46 IST" finished-at="2023-01-23T03:28:15 IST">
+    <groups>
+      <group name="Functional">
+        <method signature="RcSocialSecurityNo.validateCToSavingTxtBox()[pri:4, instance:org.testing.TestScripts.RcSocialSecurityNo@11758f2a]" name="validateCToSavingTxtBox" class="org.testing.TestScripts.RcSocialSecurityNo"/>
+        <method signature="RcSocialSecurityNo.validateCalculateButton()[pri:7, instance:org.testing.TestScripts.RcSocialSecurityNo@11758f2a]" name="validateCalculateButton" class="org.testing.TestScripts.RcSocialSecurityNo"/>
+        <method signature="RcSocialSecurityNo.validateCurrentAge()[pri:1, instance:org.testing.TestScripts.RcSocialSecurityNo@11758f2a]" name="validateCurrentAge" class="org.testing.TestScripts.RcSocialSecurityNo"/>
+        <method signature="RcSocialSecurityNo.validateCurrentIncome()[pri:3, instance:org.testing.TestScripts.RcSocialSecurityNo@11758f2a]" name="validateCurrentIncome" class="org.testing.TestScripts.RcSocialSecurityNo"/>
+        <method signature="RcSocialSecurityNo.validateCurrentlySavingTxtBox()[pri:5, instance:org.testing.TestScripts.RcSocialSecurityNo@11758f2a]" name="validateCurrentlySavingTxtBox" class="org.testing.TestScripts.RcSocialSecurityNo"/>
+        <method signature="RcSocialSecurityNo.validateIncreaseSavingRateTxtBox()[pri:6, instance:org.testing.TestScripts.RcSocialSecurityNo@11758f2a]" name="validateIncreaseSavingRateTxtBox" class="org.testing.TestScripts.RcSocialSecurityNo"/>
+        <method signature="RcSocialSecurityNo.validateRetirementAge()[pri:2, instance:org.testing.TestScripts.RcSocialSecurityNo@11758f2a]" name="validateRetirementAge" class="org.testing.TestScripts.RcSocialSecurityNo"/>
+      </group> <!-- Functional -->
+      <group name="smoke">
+        <method signature="RcSocialSecurityNo.validateCToSavingTxtBox()[pri:4, instance:org.testing.TestScripts.RcSocialSecurityNo@11758f2a]" name="validateCToSavingTxtBox" class="org.testing.TestScripts.RcSocialSecurityNo"/>
+        <method signature="RcSocialSecurityNo.validateCalculateButton()[pri:7, instance:org.testing.TestScripts.RcSocialSecurityNo@11758f2a]" name="validateCalculateButton" class="org.testing.TestScripts.RcSocialSecurityNo"/>
+        <method signature="RcSocialSecurityNo.validateCurrentAge()[pri:1, instance:org.testing.TestScripts.RcSocialSecurityNo@11758f2a]" name="validateCurrentAge" class="org.testing.TestScripts.RcSocialSecurityNo"/>
+        <method signature="RcSocialSecurityNo.validateCurrentIncome()[pri:3, instance:org.testing.TestScripts.RcSocialSecurityNo@11758f2a]" name="validateCurrentIncome" class="org.testing.TestScripts.RcSocialSecurityNo"/>
+        <method signature="RcSocialSecurityNo.validateCurrentlySavingTxtBox()[pri:5, instance:org.testing.TestScripts.RcSocialSecurityNo@11758f2a]" name="validateCurrentlySavingTxtBox" class="org.testing.TestScripts.RcSocialSecurityNo"/>
+        <method signature="RcSocialSecurityNo.validateIncreaseSavingRateTxtBox()[pri:6, instance:org.testing.TestScripts.RcSocialSecurityNo@11758f2a]" name="validateIncreaseSavingRateTxtBox" class="org.testing.TestScripts.RcSocialSecurityNo"/>
+        <method signature="RcSocialSecurityNo.validateRetirementAge()[pri:2, instance:org.testing.TestScripts.RcSocialSecurityNo@11758f2a]" name="validateRetirementAge" class="org.testing.TestScripts.RcSocialSecurityNo"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="Default test" duration-ms="29793" started-at="2023-01-23T03:27:46 IST" finished-at="2023-01-23T03:28:15 IST">
+      <class name="org.testing.TestScripts.RcSocialSecurityNo">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:org.testing.TestScripts.RcSocialSecurityNo@11758f2a]" name="preCondition" is-config="true" duration-ms="12635" started-at="2023-01-23T03:27:46 IST" finished-at="2023-01-23T03:27:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="validateCurrentAge()[pri:1, instance:org.testing.TestScripts.RcSocialSecurityNo@11758f2a]" name="validateCurrentAge" duration-ms="1756" started-at="2023-01-23T03:27:58 IST" finished-at="2023-01-23T03:28:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCurrentAge -->
+        <test-method status="PASS" signature="validateRetirementAge()[pri:2, instance:org.testing.TestScripts.RcSocialSecurityNo@11758f2a]" name="validateRetirementAge" duration-ms="366" started-at="2023-01-23T03:28:00 IST" finished-at="2023-01-23T03:28:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRetirementAge -->
+        <test-method status="PASS" signature="validateCurrentIncome()[pri:3, instance:org.testing.TestScripts.RcSocialSecurityNo@11758f2a]" name="validateCurrentIncome" duration-ms="648" started-at="2023-01-23T03:28:00 IST" finished-at="2023-01-23T03:28:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCurrentIncome -->
+        <test-method status="PASS" signature="validateCToSavingTxtBox()[pri:4, instance:org.testing.TestScripts.RcSocialSecurityNo@11758f2a]" name="validateCToSavingTxtBox" duration-ms="346" started-at="2023-01-23T03:28:01 IST" finished-at="2023-01-23T03:28:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCToSavingTxtBox -->
+        <test-method status="PASS" signature="validateCurrentlySavingTxtBox()[pri:5, instance:org.testing.TestScripts.RcSocialSecurityNo@11758f2a]" name="validateCurrentlySavingTxtBox" duration-ms="271" started-at="2023-01-23T03:28:01 IST" finished-at="2023-01-23T03:28:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCurrentlySavingTxtBox -->
+        <test-method status="PASS" signature="validateIncreaseSavingRateTxtBox()[pri:6, instance:org.testing.TestScripts.RcSocialSecurityNo@11758f2a]" name="validateIncreaseSavingRateTxtBox" duration-ms="327" started-at="2023-01-23T03:28:02 IST" finished-at="2023-01-23T03:28:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateIncreaseSavingRateTxtBox -->
+        <test-method status="PASS" signature="validateCalculateButton()[pri:7, instance:org.testing.TestScripts.RcSocialSecurityNo@11758f2a]" name="validateCalculateButton" duration-ms="2213" started-at="2023-01-23T03:28:02 IST" finished-at="2023-01-23T03:28:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCalculateButton -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:org.testing.TestScripts.RcSocialSecurityNo@11758f2a]" name="postCondition" is-config="true" duration-ms="11131" started-at="2023-01-23T03:28:04 IST" finished-at="2023-01-23T03:28:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- org.testing.TestScripts.RcSocialSecurityNo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
