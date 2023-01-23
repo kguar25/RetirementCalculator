@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.testing.TestScripts.RcSocialSecurityNo">
+      <class name="org.testing.TestScripts.RcUpdateDefalutCalculatorValueTestScript">
         <methods>
-          <include name="validateCurrentlySavingTxtBox"/>
-          <include name="validateCurrentIncome"/>
+          <include name="validateAdjustDefaultValue"/>
           <include name="preCondition"/>
-          <include name="validateCalculateButton"/>
-          <include name="validateRetirementAge"/>
-          <include name="validateCToSavingTxtBox"/>
-          <include name="validateIncreaseSavingRateTxtBox"/>
-          <include name="validateCurrentAge"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- org.testing.TestScripts.RcSocialSecurityNo -->
+      </class> <!-- org.testing.TestScripts.RcUpdateDefalutCalculatorValueTestScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

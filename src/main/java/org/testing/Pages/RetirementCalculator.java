@@ -2,12 +2,9 @@ package org.testing.Pages;
 
 import java.util.Properties;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testing.Base.Base;
 import org.testing.Locators.RetirementCalculatorLocators;
 
@@ -106,6 +103,58 @@ public class RetirementCalculator extends Base{
 	public boolean validateCalculateButton() {
 		WebElement calculateButton=rc.getCalculateButton();
 		calculateButton.click();
+		delay();
+		return false;
+	}
+	
+	public boolean validateAdjustDefaultValue() {
+		WebElement adjustDefault=rc.getAdjustDefaultValue();
+		adjustDefault.click();
+		delay();
+		return false;
+	}
+	
+	public boolean validateOtherIncomeTxtBox() {
+		WebElement oIncome= rc.getOtherIncomeTxtBox();
+		oIncome.click();
+		return inputValue(oIncome, "500"); 
+	}
+	
+	public boolean validateRetirementDurationTextBox() {
+		WebElement retirementDuration= rc.getRetirementDurationTextBox();
+		retirementDuration.click();
+		return inputValue(retirementDuration, "20"); 
+	}
+	
+	public boolean validatePostRetirementInflationButton() {
+		WebElement postInfationYes= rc.getPostRetirementInflationButton();
+		Actions actions = new Actions(driver); 
+		actions.moveToElement(postInfationYes).click().build().perform();
+		delay();
+		return false;
+	}
+	
+	public boolean validateRetirmentIncomeAnnual() {
+		WebElement raincome= rc.getRetirmentIncomeAnnual();
+		raincome.click();
+		return inputValue(raincome, "75"); 
+	}
+
+	public boolean validatePreretirmentInvestmentReturnTxtBox() {
+		WebElement preRetirement= rc.getPreretirmentInvestmentReturnTxtBox();
+		preRetirement.click();
+		return inputValue(preRetirement, "8"); 
+	}
+	
+	public boolean validatePostRetirmentInvestmentReturnTxtBox() {
+		WebElement postRetirement= rc.getPostRetirmentInvestmentReturnTxtBox();
+		postRetirement.click();
+		return inputValue(postRetirement, "5"); 
+	}
+	
+	public boolean validateSaveChangesButton() {
+		WebElement saveChanges=rc.getSaveChangesButton();
+		saveChanges.click();
 		delay();
 		return false;
 	}

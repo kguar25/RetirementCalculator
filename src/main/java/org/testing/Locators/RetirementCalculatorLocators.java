@@ -1,9 +1,6 @@
 package org.testing.Locators;
 
 import org.openqa.selenium.WebDriver;
-
-
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -70,15 +67,15 @@ public class RetirementCalculatorLocators {
 
 	@Getter
 	@FindBy(xpath = "//input[@id='retirement-duration']")
-	private WebElement retirementIncomeTextBox;
+	private WebElement retirementDurationTextBox;
 	
 	@Getter
-	@FindBy(xpath = "//input[@id='include-inflation']")
+	@FindBy(xpath = "//input[@id='include-inflation' and @value='Y']")
 	private WebElement postRetirementInflationButton;
 	
 	@Getter
 	@FindBy(css = "#retirement-annual-income")
-	private WebElement retirmentIncomeIncreaseRate;
+	private WebElement retirmentIncomeAnnual;
 	
 	@Getter
 	@FindBy(xpath = "//input[@id='pre-retirement-roi']")

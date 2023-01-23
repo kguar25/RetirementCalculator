@@ -1,6 +1,7 @@
 package org.testing.Base;
 
 import java.io.File;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Iterator;
@@ -16,10 +17,10 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 import org.testng.asserts.SoftAssert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -34,13 +35,13 @@ public class Base {
 
 	public static Properties loadConfig() throws IOException {
 		Properties pr = new Properties();
-		File file = new File("../RetirementCalaculator/resources/org.properties");
+		File file = new File("C:\\Users\\acer\\Desktop\\workspace\\RetirementCalculator\\resources\\org.properties");
 		FileInputStream fis = new FileInputStream(file);
 		pr.load(fis);
 		return pr;
 	}
 	
-	@BeforeTest
+	@BeforeClass
 	public void preCondition() throws IOException {
 		driver=invokeBrowser();
 		String url=pr.getProperty("baseurl");
@@ -74,7 +75,7 @@ public class Base {
 		return driver;
 	}
 
-	@AfterTest
+	@AfterClass
 	public void postCondition() {
 		longDelay();
 		driver.manage().deleteAllCookies();
